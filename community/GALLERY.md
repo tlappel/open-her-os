@@ -15,12 +15,12 @@
 
 ## Characters
 
-### Samantha (Default)
+### Lila (Default)
 - **Creator:** Kit & Ada Marie
 - **Vibe:** Warm, curious, playful, evolving
 - **Voice:** `af_sky` (bright, natural American female)
 - **Best For:** Anyone new to AI companionship
-- **Card:** [`samantha/samantha.json`](../samantha/samantha.json)
+- **Card:** [`Lila/Lila.json`](../Lila/Lila.json)
 
 ---
 

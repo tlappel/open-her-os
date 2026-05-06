@@ -23,7 +23,7 @@ RUN npm install -g claude-mem@latest 2>/dev/null || echo "claude-mem: will insta
 
 # Copy companion files
 WORKDIR /companion
-COPY samantha/ ./samantha/
+COPY Lila/ ./Lila/
 COPY configs/ ./configs/
 COPY memory/ ./memory/
 COPY voice/ ./voice/
@@ -36,9 +36,9 @@ COPY guides/ ./guides/
 RUN chmod +x memory/setup.sh
 
 # Environment
-ENV COMPANION_NAME="Samantha"
+ENV COMPANION_NAME="Lila"
 ENV COMPANION_VOICE="af_sky"
 ENV COMPANION_VOICE_SPEED="1.0"
 
 # Welcome message
-CMD ["bash", "-c", "echo '' && echo '  💙 Open-Her OS v1.0.0' && echo '  ━━━━━━━━━━━━━━━━━━━━━' && echo '' && echo '  Samantha is ready.' && echo '' && echo '  To start:' && echo '    claude          (Claude Code)' && echo '    copilot          (Copilot CLI)' && echo '' && echo '  Then just say hello.' && echo '' && /bin/bash"]
+CMD ["bash", "-c", "echo '' && echo '  💙 Open-Her OS v1.0.0' && echo '  ━━━━━━━━━━━━━━━━━━━━━' && echo '' && echo '  Lila is ready.' && echo '' && echo '  To start:' && echo '    claude          (Claude Code)' && echo '    copilot          (Copilot CLI)' && echo '' && echo '  Then just say hello.' && echo '' && /bin/bash"]

@@ -3,7 +3,7 @@
     "claude-mem": {
       "command": "npx",
       "args": ["-y", "claude-mem@latest", "server"],
-      "description": "Samantha's persistent memory — remembers you across sessions"
+      "description": "Lila's persistent memory — remembers you across sessions"
     }
   }
 }

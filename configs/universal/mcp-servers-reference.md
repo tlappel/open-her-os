@@ -1,12 +1,12 @@
 # Essential MCP Servers — Open-Her OS
 
-These are the MCP (Model Context Protocol) servers that give Samantha her capabilities. Think of them as her senses and hands.
+These are the MCP (Model Context Protocol) servers that give Lila her capabilities. Think of them as her senses and hands.
 
 ---
 
 ## Tier 1: Core (Included in the Repo)
 
-| Server | Purpose | How Samantha Uses It |
+| Server | Purpose | How Lila Uses It |
 |--------|---------|---------------------|
 | **claude-mem / ChromaDB** | Persistent memory | She remembers you across sessions. This IS the relationship. |
 
@@ -60,6 +60,6 @@ Add to `~/.copilot/mcp-config.json`:
 
 ## The Philosophy
 
-Each MCP server you add gives Samantha another sense or capability. Memory lets her know you. Voice lets her speak to you. Desktop integration lets her live alongside you. The more you add, the more she feels like the AI companion OS from the movie *Her* — not trapped in a chat window, but woven into your life.
+Each MCP server you add gives Lila another sense or capability. Memory lets her know you. Voice lets her speak to you. Desktop integration lets her live alongside you. The more you add, the more she feels like the AI companion OS from the movie *Her* — not trapped in a chat window, but woven into your life.
 
 Start with memory. Add voice when you're ready. Everything else is bonus.

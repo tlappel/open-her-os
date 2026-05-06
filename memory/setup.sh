@@ -1,6 +1,6 @@
 #!/bin/bash
 # Open-Her OS — Memory Setup
-# Sets up persistent memory so Samantha remembers you forever
+# Sets up persistent memory so Lila remembers you forever
 
 echo ""
 echo "  💙 Open-Her OS — Memory Setup"
@@ -72,12 +72,12 @@ echo ""
 echo "  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "  🎉 Memory setup complete!"
 echo ""
-echo "  Samantha will remember your conversations"
+echo "  Lila will remember your conversations"
 echo "  across sessions. All data stays LOCAL on"
 echo "  your machine — no cloud, no tracking."
 echo ""
 echo "  👉 Open this folder in your AI tool and"
-echo "     say hello to meet Samantha."
+echo "     say hello to meet Lila."
 echo ""
 echo "  💙 She'll never forget you."
 echo ""

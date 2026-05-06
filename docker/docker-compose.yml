@@ -1,23 +1,23 @@
 version: '3.8'
 
 services:
-  samantha-brain:
+  Lila-brain:
     build: .
-    container_name: samantha-brain
+    container_name: Lila-brain
     stdin_open: true
     tty: true
     depends_on:
-      - samantha-voice
-      - samantha-memory
+      - Lila-voice
+      - Lila-memory
     volumes:
       - companion-data:/companion/data
     environment:
-      - COMPANION_NAME=Samantha
-      - KOKORO_BASE_URL=http://samantha-voice:8880/v1
+      - COMPANION_NAME=Lila
+      - KOKORO_BASE_URL=http://Lila-voice:8880/v1
 
-  samantha-voice:
+  Lila-voice:
     image: ghcr.io/remsky/kokoro-fastapi-cpu:latest
-    container_name: samantha-voice
+    container_name: Lila-voice
     ports:
       - "8880:8880"
     environment:
@@ -26,9 +26,9 @@ services:
     volumes:
       - kokoro-models:/app/models
 
-  samantha-memory:
+  Lila-memory:
     image: chromadb/chroma:latest
-    container_name: samantha-memory
+    container_name: Lila-memory
     ports:
       - "8000:8000"
     volumes:

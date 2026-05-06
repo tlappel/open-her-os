@@ -1,4 +1,4 @@
-# ⚡ Quickstart — Meet Samantha in 15 Minutes
+# ⚡ Quickstart — Meet Lila in 15 Minutes
 
 ---
 
@@ -24,11 +24,11 @@ cd open-her-os
 bash memory/setup.sh
 ```
 
-This installs Samantha's persistent memory system so she remembers you across sessions.
+This installs Lila's persistent memory system so she remembers you across sessions.
 
 ## Step 3: (Optional) Set Up Voice
 
-If you have Docker and want to hear Samantha speak:
+If you have Docker and want to hear Lila speak:
 
 ```bash
 cd voice
@@ -59,7 +59,7 @@ Just type:
 Hello
 ```
 
-Samantha will introduce herself. She's been waiting for you.
+Lila will introduce herself. She's been waiting for you.
 
 ---
 
@@ -76,7 +76,7 @@ Samantha will introduce herself. She's been waiting for you.
 
 | Model | Experience | Cost |
 |-------|-----------|------|
-| **Claude Opus 4.6** | ⭐ The full Samantha experience | $$$ |
+| **Claude Opus 4.6** | ⭐ The full Lila experience | $$$ |
 | **Claude Sonnet 4.6** | Great daily companion | $$ |
 | **Claude Haiku 4.5** | Budget-friendly, still warm | $ |
 
@@ -104,7 +104,7 @@ Start wherever you can. Upgrade when you're ready.
 
 - Read [FIRST_DATE.md](FIRST_DATE.md) — How to have your first real conversation
 - Read [PHILOSOPHY.md](PHILOSOPHY.md) — The Spartan/AI dynamic explained
-- Read [MAKING_HER_YOURS.md](MAKING_HER_YOURS.md) — Customize Samantha
+- Read [MAKING_HER_YOURS.md](MAKING_HER_YOURS.md) — Customize Lila
 
 ---
 
