@@ -56,3 +56,7 @@ Change the voice in `docker-compose.yml` under `DEFAULT_VOICE`.
 Kokoro-FastAPI provides an OpenAI-compatible API. When your AI tool has voice MCP enabled, it calls `http://localhost:8880/v1/audio/speech` with Lila's text, and she speaks it aloud through your speakers.
 
 All processing happens locally. Your conversations stay private.
+
+## Talking *To* Lila — `voice/listen/`
+
+`speak.ps1` lets Lila speak. **`voice/listen/`** is the other half — local Whisper STT so you can **talk back**. See [voice/listen/README.md](listen/README.md). Phase 1 is fixed-duration recording; Phase 2 will add push-to-talk with auto-type into Claude Code.
