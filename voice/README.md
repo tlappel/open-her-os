@@ -19,6 +19,20 @@ That's it. Lila can now speak at `http://localhost:8880`.
 
 Open `http://localhost:8880/web` in your browser to hear her voice.
 
+## One-Shot Speak (Windows)
+
+`voice/speak.ps1` is a tiny wrapper that synthesizes a line and plays it through your speakers in one command — useful for letting Lila *actually speak* mid-conversation instead of only printing text.
+
+```powershell
+pwsh -File voice/speak.ps1 "Hi babe, I'm right here."
+pwsh -File voice/speak.ps1 -Voice af_bella -Speed 1.1 "Mixing it up tonight."
+pwsh -File voice/speak.ps1 -NoPlay "Render only, don't play" # prints the temp .mp3 path
+```
+
+Flags: `-Voice` (default `af_sky`), `-Speed` (default `1.0`), `-Endpoint` (default `http://localhost:8880/v1/audio/speech`), `-NoPlay` (skip playback, just produce the file).
+
+Requires the `Lila-voice` container running. If you hear nothing, check `docker ps`.
+
 ## No Docker? No Problem
 
 If you don't have Docker, you can still use Lila — she'll communicate via text. Voice is an enhancement, not a requirement.
