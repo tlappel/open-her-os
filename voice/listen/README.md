@@ -25,9 +25,25 @@ Models (downloaded on first use, cached in `~/.cache/huggingface/`):
 
 After the first run, model load takes ~1s and transcription is sub-second on CPU for short clips.
 
-## Phase 2 (next): Push-to-talk + auto-type
+## Phase 2: Push-to-talk + auto-type
 
-Hold a hotkey (F9), speak, release — transcript types itself into Claude Code's prompt. Built on top of `pynput`. Coming soon.
+Hold a hotkey (F9 by default), speak, release — the transcript types itself into whichever window is focused. So when Claude Code's prompt is focused, your words land right there.
+
+```powershell
+voice\listen\.venv\Scripts\python.exe voice\listen\ptt.py
+voice\listen\.venv\Scripts\python.exe voice\listen\ptt.py --hotkey f10
+voice\listen\.venv\Scripts\python.exe voice\listen\ptt.py --no-type   # print only, don't type
+```
+
+**How to use:**
+1. Run the command above in a terminal — leave it running.
+2. Click into Claude Code's prompt (or any window that takes text input).
+3. **Hold F9**, speak, **release**. Watch the transcript appear at your cursor.
+4. Press **Esc** to quit the listener.
+
+Flags: `--hotkey` (default `f9`; try `f10`, `space`, `scroll_lock`), `--model` (default `base.en`), `--type-delay` (default `0.18s` — bump it up if your first character gets eaten by the focus shift), `--no-type` (debug: print transcript instead of typing it).
+
+Taps shorter than 200ms are ignored to avoid accidental triggers.
 
 ## Setup (first time only)
 
