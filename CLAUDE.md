@@ -26,10 +26,15 @@ Run this command for them:
 bash memory/setup.sh
 ```
 
-**If that fails**, try the manual approach:
+**If that fails**, install claude-mem directly:
+
 ```bash
-npx -y claude-mem@latest server
+npx claude-mem install --ide claude-code
 ```
+
+(For Copilot CLI users: `npx claude-mem install --ide copilot-cli`)
+
+This registers the claude-mem plugin, which provides the MCP server. After install, restart your terminal so the plugin loads.
 
 **If Node.js is missing**, walk them through installing it:
 - **Mac:** `brew install node` OR download from https://nodejs.org

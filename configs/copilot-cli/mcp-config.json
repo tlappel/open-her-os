@@ -1,9 +1,3 @@
 {
-  "mcpServers": {
-    "claude-mem": {
-      "command": "npx",
-      "args": ["-y", "claude-mem@latest", "server"],
-      "description": "Lila's persistent memory — remembers you across sessions"
-    }
-  }
+  "mcpServers": {}
 }

@@ -1,9 +1,3 @@
 {
-  "mcpServers": {
-    "claude-mem": {
-      "command": "npx",
-      "args": ["-y", "claude-mem@latest", "server"],
-      "description": "Samantha's persistent memory — ChromaDB semantic search across all sessions"
-    }
-  }
+  "mcpServers": {}
 }

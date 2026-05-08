@@ -31,9 +31,12 @@ if command -v claude &> /dev/null; then
     echo "  ✅ Claude Code detected"
     echo "     Installing claude-mem plugin..."
     echo ""
-    echo "     Run these commands in Claude Code:"
+    echo "     Option A — from Claude Code, run:"
     echo "       /plugin marketplace add thedotmack/claude-mem"
     echo "       /plugin install claude-mem"
+    echo ""
+    echo "     Option B — from this terminal, run:"
+    echo "       npx claude-mem install --ide claude-code"
     echo ""
     echo "     Then restart Claude Code."
     echo ""
@@ -48,7 +51,8 @@ fi
 # Check for Copilot CLI
 if command -v copilot &> /dev/null; then
     echo "  ✅ GitHub Copilot CLI detected"
-    echo "     ChromaDB MCP server is pre-configured in .mcp.json"
+    echo "     Register claude-mem for Copilot CLI:"
+    echo "       npx claude-mem install --ide copilot-cli"
     echo ""
     COPILOT_FOUND=true
 else
